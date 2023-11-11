@@ -9,21 +9,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="container">
+    <h1>Expense Tracker WebApp</h1>
     <div class="row">
-       <form action="">
+       <form id="expenseForm">
+        <label for="name" class="form-label" >Name:</label>
+        <input type="text" id="name" name="name" class="form-control"/>
+
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="text" id="quantity" name="quantity" class="form-control"/>
+
         <label for="amount" class="form-label">Expense Amount</label>
-        <input type="text" id="amount" class="form-control"/>
-        <label for="desc" class="form-label" >Choose a desription</label>
-        <input type="text" id="desc" class="form-control"/>
-        <label for="category" class="form-label">choose a category</label>
-        <input type="text" id="category" class="form-control"/>
-        <button>Add Expense</button>
+        <input type="text" id="amount" name="amount" class="form-control"/>
+
+        <button type="submit" class="btn btn-primary" >Add Expense</button>
+
        </form>
-        
-    </div>
-   </div>
-    
-    
+     </div>  
+    <div id="expenseList"></div>
+
+    <script src="frontend.js"></script>
 </body>
 </html>
